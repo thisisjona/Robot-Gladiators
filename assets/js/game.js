@@ -46,7 +46,7 @@ var fight = function(enemyName) {
       window.alert(playerName + " still has " + playerHealth + " health left.");
     }
     // if player choses to skip
-  } else if (promptFight === "skip" || promptFight === "SKIP") {ß
+  } else if (promptFight === "skip" || promptFight === "SKIP") {
     var confirmSkip = window.confirm("Are you sure you'd like to quit?");
 
     // if yes (true), leave fight
@@ -70,5 +70,6 @@ var fight = function(enemyName) {
 // run fight function to start game
 for(var i = 0; i < enemyNames.length; i++){
     var pickedEnemyName = enemyNames[i];
+    enemyHealth = 50;
     fight(pickedEnemyName);
 };
